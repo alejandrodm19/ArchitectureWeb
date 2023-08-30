@@ -243,3 +243,48 @@ header a{
 .about_us_content p{
     margin-bottom: 1rem;
 }
+
+/* Main HTML */
+.model{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media (min-width: 768px){ 
+    .model{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.model_content{
+    padding: 5rem;
+    background-color: var(--whiteColor);
+}
+
+.basic{
+    background-image: url(../img/modelo_basico.jpg);
+}
+
+@media (min-width: 768px) { 
+
+    .basic {
+        background-position: top right;
+    }
+
+    .basic .model_content{
+        grid-row: 2/3;
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+
+.premier{
+    background-image: url(../img/modelo_premier.jpg);
+
+}
+
+.elite{
+    background-image: url(../img/modelo_elite.jpg);
+
+}
