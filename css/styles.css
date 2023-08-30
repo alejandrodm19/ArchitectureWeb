@@ -365,3 +365,31 @@ header a{
     }
 }
 
+/* Footer */
+
+.footer{
+    height: 50rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-position: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--whiteColor);
+}
+
+footer a{
+    color: var(--whiteColor);
+    font-size: 2rem;
+}
+
+.copyright{
+    background-color: var(--blackColor);
+    text-align: center;
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    padding: .5rem;
+    
+}
