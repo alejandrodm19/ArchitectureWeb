@@ -250,6 +250,11 @@ header a{
     grid-template-rows: repeat(2, 1fr);
     background-repeat: no-repeat;
     background-position: bottom center;
+    margin-bottom: 5rem;
+}
+
+.model:last-of-type{
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px){ 
@@ -284,7 +289,26 @@ header a{
 
 }
 
+@media (min-width: 768px) { 
+    .premier{
+        background-position: top left;
+    }
+    .premier .model_content{
+        grid-column: 2/3;
+        padding: 2rem;
+    }
+}
+
 .elite{
     background-image: url(../img/modelo_elite.jpg);
 
+}
+
+@media (min-width: 768px) { 
+    .elite{
+        background-position: top right;
+    }
+    .elite .model_content{
+        padding: 2rem 2rem 2rem 0;
+    }
 }
